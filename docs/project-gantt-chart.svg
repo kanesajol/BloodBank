@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" font-family="Segoe UI, Arial, sans-serif">
+  <style>
+    .title { font-size: 16px; font-weight: 700; fill: #0f172a; }
+    .subtitle { font-size: 11px; fill: #64748b; }
+    .month { font-size: 11px; font-weight: 600; fill: #334155; }
+    .task { font-size: 11px; fill: #1e293b; }
+    .grid { stroke: #e2e8f0; stroke-width: 1; }
+    .bar1 { fill: #7f1d1d; }
+    .bar2 { fill: #b91c1c; }
+    .bar3 { fill: #dc2626; }
+    .bar4 { fill: #ea580c; }
+    .bar5 { fill: #ca8a04; }
+    .bar6 { fill: #2563eb; }
+    .bar7 { fill: #0891b2; }
+    .bar8 { fill: #059669; }
+    .bar9 { fill: #4f46e5; }
+  </style>
+
+  <text class="title" x="40" y="32">Figure 5.1 Project Gantt Chart</text>
+  <text class="subtitle" x="40" y="50">CRH Blood Bank  Integrated Web and Mobile System (JanNov)</text>
+
+  <!-- Month headers -->
+  <line class="grid" x1="280" y1="70" x2="280" y2="470"/>
+  <text class="month" x="300" y="88">Jan</text>
+  <text class="month" x="360" y="88">Feb</text>
+  <text class="month" x="420" y="88">Mar</text>
+  <text class="month" x="480" y="88">Apr</text>
+  <text class="month" x="540" y="88">May</text>
+  <text class="month" x="600" y="88">Jun</text>
+  <text class="month" x="660" y="88">Jul</text>
+  <text class="month" x="720" y="88">Aug</text>
+  <text class="month" x="780" y="88">Sep</text>
+  <text class="month" x="840" y="88">Oct</text>
+  <text class="month" x="900" y="88">Nov</text>
+
+  <!-- Vertical grid (11 months, ~60px each from x=290) -->
+  <g>
+    <line class="grid" x1="290" y1="70" x2="290" y2="470"/>
+    <line class="grid" x1="350" y1="70" x2="350" y2="470"/>
+    <line class="grid" x1="410" y1="70" x2="410" y2="470"/>
+    <line class="grid" x1="470" y1="70" x2="470" y2="470"/>
+    <line class="grid" x1="530" y1="70" x2="530" y2="470"/>
+    <line class="grid" x1="590" y1="70" x2="590" y2="470"/>
+    <line class="grid" x1="650" y1="70" x2="650" y2="470"/>
+    <line class="grid" x1="710" y1="70" x2="710" y2="470"/>
+    <line class="grid" x1="770" y1="70" x2="770" y2="470"/>
+    <line class="grid" x1="830" y1="70" x2="830" y2="470"/>
+    <line class="grid" x1="890" y1="70" x2="890" y2="470"/>
+    <line class="grid" x1="950" y1="70" x2="950" y2="470"/>
+  </g>
+  <line class="grid" x1="40" y1="100" x2="950" y2="100"/>
+
+  <!-- Helper: month 1=Jan at x=290, width 60 per month -->
+  <!-- Row 1: Planning & SAD Jan-Feb -->
+  <text class="task" x="40" y="125">Planning, SAD &amp; project selection</text>
+  <rect class="bar1" x="290" y="108" width="110" height="18" rx="3"/>
+
+  <!-- Row 2: Methodology & requirements Feb-Mar -->
+  <text class="task" x="40" y="155">Methodology &amp; requirements analysis</text>
+  <rect class="bar2" x="350" y="138" width="110" height="18" rx="3"/>
+
+  <!-- Row 3: Use case, DFD, ERD Mar -->
+  <text class="task" x="40" y="185">Use cases, DFD &amp; ERD</text>
+  <rect class="bar3" x="410" y="168" width="60" height="18" rx="3"/>
+
+  <!-- Row 4: Proposal title Apr -->
+  <text class="task" x="40" y="215">Proposal title submission</text>
+  <rect class="bar4" x="470" y="198" width="60" height="18" rx="3"/>
+
+  <!-- Row 5: Proposal defense May -->
+  <text class="task" x="40" y="245">Proposal defense &amp; coordination</text>
+  <rect class="bar5" x="530" y="228" width="60" height="18" rx="3"/>
+
+  <!-- Row 6: Figma & dev Jun-Jul -->
+  <text class="task" x="40" y="275">Figma design &amp; system development (web)</text>
+  <rect class="bar6" x="590" y="258" width="120" height="18" rx="3"/>
+
+  <!-- Row 7: Enhancements Aug-Sep -->
+  <text class="task" x="40" y="305">Enhancements, Excel import &amp; mobile (Expo)</text>
+  <rect class="bar7" x="710" y="288" width="120" height="18" rx="3"/>
+
+  <!-- Row 8: Blood bank feedback visit -->
+  <text class="task" x="40" y="335">Blood bank visit (feedback &amp; prototype)</text>
+  <rect class="bar7" x="770" y="318" width="60" height="18" rx="3" opacity="0.85"/>
+
+  <!-- Row 9: Final testing & evaluation Oct -->
+  <text class="task" x="40" y="365">Final testing &amp; evaluation (n=15)</text>
+  <rect class="bar8" x="830" y="348" width="60" height="18" rx="3"/>
+
+  <!-- Row 10: Pre-oral & documentation Nov -->
+  <text class="task" x="40" y="395">Pre-oral defense &amp; documentation</text>
+  <rect class="bar9" x="890" y="378" width="60" height="18" rx="3"/>
+
+  <!-- Legend -->
+  <text class="subtitle" x="40" y="440">Timeline: each column = one month (January to November). Bars show active work period per activity.</text>
+  <rect x="40" y="455" width="14" height="10" class="bar6"/><text class="task" x="60" y="464">Development</text>
+  <rect x="160" y="455" width="14" height="10" class="bar7"/><text class="task" x="180" y="464">Enhancement / mobile</text>
+  <rect x="310" y="455" width="14" height="10" class="bar8"/><text class="task" x="330" y="464">Testing &amp; evaluation</text>
+  <rect x="470" y="455" width="14" height="10" class="bar9"/><text class="task" x="490" y="464">Defense &amp; docs</text>
+</svg>
